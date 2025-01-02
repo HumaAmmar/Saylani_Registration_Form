@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.header{
+    /* background-image: url(https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80) ; */
+    background-size: cover;
+   
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    
+   
+}
+
+#upper{
+    padding-top: 20px;
+}
+
+#logo{
+    height: 70px;
+}
+
+#middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* Center content horizontally */
+   
+  }
+  
+#middle img {
+    border-radius: 50%;
+
+}
+
+
+#portal{
+    border: 1px solid blue;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 8px;
+    color:blue ;
+}
+
+#card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cur{
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid green;
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.long{
+    margin-left: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.lon{
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid green;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    width: 1050px;
+    color: gray;
+}
+
+label{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: blue;
+    margin-left: 50px;
+}
+
+#load{
+    margin-left: 50px;
+    height: 100px;
+    width: 100px;
+}
+
+.pic{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.pic > ul{
+    list-style: none;
+}
+
+.pre{
+    margin-left: 70px;
+    width: 1000px;
+}
+
+.sub{
+    background-color: rgb(86, 86, 240);
+    color: white;
+    width: 1000px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 50px;
+    border: none;
+}
+  
+
+@media only screen and (max-width:450px){
+   .container{
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    align-items: center;
+   }
+
+   #logo{
+    height: 50px;
+   }
+
+   #middle{
+   font-size: 10px;
+   flex-direction: column;
+   
+   
+   }
+
+   .header{
+    height: 225px;
+   }
+
+   #card{
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+   }
+
+   .cur{
+    width: 250px;
+    height: 50px;
+    margin-left: 0;
+    justify-content: center;
+   }
+
+   label{
+    font-size: 10px;
+    margin-left: 0;
+    
+   }
+
+   .long{
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 35px;
+    
+    
+   }
+
+   .lon{
+   
+    width: 250px;
+    margin-left: 0;
+    justify-content: center;
+   }
+
+   .add{
+    
+    margin-left: 0;
+   }
+
+  .pic{
+margin-left: 0;
+    width: 250px;
+    font-size: 10px;
+  }
+  #load{
+   margin-left: 0;
+  }
+
+  .pre{
+    margin-left: 10px;
+    width: 250px;
+    font-size: 12px;
+   }
+
+   .sub{
+    width: 250px;
+    height: 50px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    padding-top: 17px;
+   
+   }
+}
+
+@media only screen and (min-width:500px) and (max-width:800px){
+   
+
+       
+
+       #portal{
+        
+        width: 150px;
+        padding: 8px;
+        
+    }
+
+    .lon{
+        width: 500px;
+        margin-left: 30px;
+    }
+
+    .long > div > label {
+        margin-left: 50px;
+        margin: 30px;
+    }
+
+    .pic{
+        margin-left: 0;
+        width: 500px;
+    }
+
+    #up{
+        margin-left: 0;
+    }
+   
+    .pre{
+        width: 500px;
+        margin-left: 30px;
+    }
+
+    .sub{
+        width: 500px;
+        height: 50px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        padding-top: 17px;
+    }
+}
+
+
